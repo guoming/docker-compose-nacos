@@ -13,3 +13,5 @@ https://github.com/alibaba/nacos/blob/develop/distribution/conf/nacos-mysql.sql
 
 ## 4、测试
 http://localhost:8848/nacos/#/login
+账号：nacos
+密码：nacos
