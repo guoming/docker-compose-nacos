@@ -16,8 +16,8 @@ services:
       replicas: 1
       resources:
         limits:
-          cpus: "0.1"
-          memory: 512M       
+          cpus: "0.2"
+          memory: 1024M       
     #volumes:
     #  - ./standalone-logs/:/home/nacos/logs
     #  - ./init.d/custom.properties:/home/nacos/init.d/custom.properties
@@ -29,14 +29,14 @@ services:
       - nacos
       - mysql
     environment:
-      - JVM_XMS=256m
-      - JVM_XMX=256m
-      - JVM_XMN=256m
+      - JVM_XMS=1024m
+      - JVM_XMX=1024m
+      - JVM_XMN=1024m
       - PREFER_HOST_MODE=hostname
       - MODE=standalone
       - SPRING_DATASOURCE_PLATFORM=mysql
       - MYSQL_SERVICE_HOST=mysql
-      - MYSQL_SERVICE_DB_NAME=Nacos
+      - MYSQL_SERVICE_DB_NAME=nacos
       - MYSQL_SERVICE_PORT=3306
       - MYSQL_SERVICE_USER=root
       - MYSQL_SERVICE_PASSWORD=123456
