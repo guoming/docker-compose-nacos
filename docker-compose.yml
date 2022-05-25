@@ -17,7 +17,7 @@ services:
       resources:
         limits:
           cpus: "0.2"
-          memory: 1024M       
+          memory: 2048M       
     #volumes:
     #  - ./standalone-logs/:/home/nacos/logs
     #  - ./init.d/custom.properties:/home/nacos/init.d/custom.properties
@@ -30,7 +30,7 @@ services:
       - mysql
     environment:
       - JVM_XMS=1024m
-      - JVM_XMX=1024m
+      - JVM_XMX=2048m
       - JVM_XMN=1024m
       - PREFER_HOST_MODE=hostname
       - MODE=standalone
